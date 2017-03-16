@@ -1,6 +1,83 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
+@import 'reset';
+@import 'layout';
+
+$c-primary: #96ca2d;
+$c-light: #b5e655;
+$c-secondary: #4bb5c1;
+$c-secondary-light: #7FC6BC;
+$c-white: #edf7f2;
+$c-pure-white: #fff;
+
+$m-gutter: 1rem;
+$m-max-width: 60rem;
+
+$font: 'Dosis', sans-serif;
+
+* {
+  font-family: $font;
+}
+
+.nav {
+  background: $c-primary;
+  color: $c-white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &-item {
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: $c-white;
+    font-size: 1.2rem;
+  }
+}
+
+.login {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+
+  &-header {
+    background: $c-primary;
+    color: $c-white;
+    padding: 0.5rem;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  &-form {
+    padding: 0.5rem;
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      border-bottom: 1px solid $c-secondary;
+      padding: 0.5rem 0;
+      font-size: 1.3rem;
+    }
+
+    &__input {
+      border: none;
+      font-size: 1rem;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    &__buttons {
+      padding: 1rem;
+    }
+  }
+}
+
+.button {
+  background: $c-primary;
+}
