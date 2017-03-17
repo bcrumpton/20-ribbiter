@@ -1,12 +1,6 @@
 // @import 'yoga';
 // @import 'normalize';
 
-$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome';
-@import 'box-sizing';
-@import 'reset';
-@import 'layout';
-
 $c-primary: #96ca2d;
 $c-light: #b5e655;
 $c-secondary: #4bb5c1;
@@ -19,13 +13,23 @@ $m-max-width: 60rem;
 
 $font: 'Dosis', sans-serif;
 
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
+@import 'box-sizing';
+@import 'reset';
+@import 'layout';
+
 * {
   font-family: $font;
 }
 
+body {
+  background: $c-white;
+}
+
 .nav {
   background: $c-primary;
-  color: $c-white;
+  color: $c-pure-white;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -33,17 +37,19 @@ $font: 'Dosis', sans-serif;
   &-item {
     padding: 0 0.5rem;
     text-decoration: none;
-    color: $c-white;
+    color: $c-pure-white;
     font-size: 1.2rem;
   }
 }
 
 .login {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  background: $c-pure-white;
+  width: 50%;
 
   &-header {
     background: $c-primary;
-    color: $c-white;
+    color: $c-pure-white;
     padding: 0.5rem;
   }
 
@@ -52,19 +58,19 @@ $font: 'Dosis', sans-serif;
   }
 
   &-form {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 
     &__group {
       display: flex;
       flex-direction: column;
       border: none;
-      border-bottom: 1px solid $c-secondary;
-      padding: 0.5rem 0;
+      padding: 0.5rem 0.5rem;
       font-size: 1.3rem;
     }
 
     &__input {
       border: none;
+      border-bottom: 3px solid $c-secondary;
       font-size: 1rem;
     }
 
@@ -73,11 +79,25 @@ $font: 'Dosis', sans-serif;
     }
 
     &__buttons {
-      padding: 1rem;
+      border-top: 1px solid $c-secondary;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
 
 .button {
-  background: $c-primary;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+
+  &-register {
+    background: $c-white;
+    color: $c-secondary-light;
+  }
+
+  &-login {
+    background: $c-primary;
+    color: $c-white;
+  }
 }

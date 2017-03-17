@@ -1,5 +1,8 @@
 .section {
-  padding: 1rem;
+  padding: 2rem 1rem;
+  background: $c-white;
+  display: flex;
+  justify-content: center;
 }
 
 .container {

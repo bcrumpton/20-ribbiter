@@ -5,9 +5,9 @@ import VueRouter from 'vue-router';
 
 import App from './routes/application.vue';
 import Index from './routes/index.vue';
-import Login from '/routes/login.vue';
-import Register from '/routes/register.vue';
-import Users from 'routes/users.vue';
+import Login from './routes/login.vue';
+import Register from './routes/register.vue';
+import Users from './routes/users.vue';
 
 Vue.use(VueRouter);
 
