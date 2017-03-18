@@ -58,14 +58,17 @@ body {
   }
 
   &-form {
-    padding: 0.5rem 0;
+
+    &__fields {
+      border: none;
+      padding: 1rem 0.5rem;
+      font-size: 1.3rem;
+    }
 
     &__group {
       display: flex;
       flex-direction: column;
-      border: none;
-      padding: 0.5rem 0.5rem;
-      font-size: 1.3rem;
+      padding: 0.5rem 0;
     }
 
     &__input {
@@ -80,7 +83,7 @@ body {
 
     &__buttons {
       border-top: 1px solid $c-secondary;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1rem;
       display: flex;
       justify-content: space-between;
     }
