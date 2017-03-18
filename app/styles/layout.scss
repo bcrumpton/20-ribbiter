@@ -1,0 +1,11 @@
+.section {
+  padding: 2rem 1rem;
+  background: $c-white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
